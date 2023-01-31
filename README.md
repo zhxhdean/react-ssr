@@ -1,4 +1,6 @@
 # react-ssr
-Server Rendering Example
-# npm install
-# npm run dev
+Server Rendering Example(React 18)
+
+npm install
+
+npm run dev
