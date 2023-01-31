@@ -86,15 +86,27 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./src/api.js":
+/*!********************!*\
+  !*** ./src/api.js ***!
+  \********************/
+/*! exports provided: getToDoList */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"getToDoList\", function() { return getToDoList; });\n/* harmony import */ var _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/asyncToGenerator */ \"@babel/runtime/helpers/asyncToGenerator\");\n/* harmony import */ var _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/regenerator */ \"@babel/runtime/regenerator\");\n/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1__);\n\n\n// 模拟服务端数据返回\n\nfunction sleep() {\n  var n = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 500;\n  return new Promise(function (r) {\n    return setTimeout(r, n);\n  });\n}\nfunction getToDoList() {\n  return _getToDoList.apply(this, arguments);\n}\nfunction _getToDoList() {\n  _getToDoList = _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0___default()( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1___default.a.mark(function _callee() {\n    return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1___default.a.wrap(function _callee$(_context) {\n      while (1) switch (_context.prev = _context.next) {\n        case 0:\n          _context.next = 2;\n          return sleep();\n        case 2:\n          return _context.abrupt(\"return\", ['a', 'b', 'c', 'd', 'e', 'f']);\n        case 3:\n        case \"end\":\n          return _context.stop();\n      }\n    }, _callee);\n  }));\n  return _getToDoList.apply(this, arguments);\n}\n\n//# sourceURL=webpack:///./src/api.js?");
+
+/***/ }),
+
 /***/ "./src/app.jsx":
 /*!*********************!*\
   !*** ./src/app.jsx ***!
   \*********************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/*! exports provided: routes */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default = App;\n\nvar _reactRouterDom = __webpack_require__(/*! react-router-dom */ \"react-router-dom\");\n\nvar _react = __webpack_require__(/*! react */ \"react\");\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _home = __webpack_require__(/*! ./pages/home */ \"./src/pages/home.jsx\");\n\nvar _home2 = _interopRequireDefault(_home);\n\nvar _about = __webpack_require__(/*! ./pages/about */ \"./src/pages/about.jsx\");\n\nvar _about2 = _interopRequireDefault(_about);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\n// 路由入口文件\nfunction App() {\n  return _react2.default.createElement(\n    _reactRouterDom.Routes,\n    null,\n    _react2.default.createElement(_reactRouterDom.Route, { path: \"/\", element: _react2.default.createElement(_home2.default, null) }),\n    _react2.default.createElement(_reactRouterDom.Route, { path: \"/about\", element: _react2.default.createElement(_about2.default, null) })\n  );\n}\n\n//# sourceURL=webpack:///./src/app.jsx?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"routes\", function() { return routes; });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"react\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _pages_home__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./pages/home */ \"./src/pages/home.jsx\");\n/* harmony import */ var _pages_about__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./pages/about */ \"./src/pages/about.jsx\");\n\n\n\n\n// 路由入口文件\n\nvar routes = [{\n  path: '/',\n  element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_pages_home__WEBPACK_IMPORTED_MODULE_1__[\"default\"], null),\n  loader: _pages_home__WEBPACK_IMPORTED_MODULE_1__[\"default\"].getServerSideProps\n}, {\n  path: '/about',\n  element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_pages_about__WEBPACK_IMPORTED_MODULE_2__[\"default\"], null)\n}];\n\n//# sourceURL=webpack:///./src/app.jsx?");
 
 /***/ }),
 
@@ -102,11 +114,11 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /*!*****************************!*\
   !*** ./src/pages/about.jsx ***!
   \*****************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default = About;\n\nvar _react = __webpack_require__(/*! react */ \"react\");\n\nvar _react2 = _interopRequireDefault(_react);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction About() {\n  return 'About';\n}\n\n//# sourceURL=webpack:///./src/pages/about.jsx?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return About; });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"react\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n\nfunction About() {\n  return 'About';\n}\n\n//# sourceURL=webpack:///./src/pages/about.jsx?");
 
 /***/ }),
 
@@ -114,11 +126,11 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /*!****************************!*\
   !*** ./src/pages/home.jsx ***!
   \****************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _react = __webpack_require__(/*! react */ \"react\");\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _reactRouterDom = __webpack_require__(/*! react-router-dom */ \"react-router-dom\");\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar Home = function Home() {\n  return _react2.default.createElement(\n    \"div\",\n    null,\n    \"This is Home\",\n    _react2.default.createElement(\n      \"button\",\n      {\n        onClick: function onClick() {\n          alert(\"click1\");\n        }\n      },\n      \"click\"\n    ),\n    _react2.default.createElement(\n      _reactRouterDom.Link,\n      { to: \"/about\" },\n      \"About\"\n    )\n  );\n};\nexports.default = Home;\n\n//# sourceURL=webpack:///./src/pages/home.jsx?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/asyncToGenerator */ \"@babel/runtime/helpers/asyncToGenerator\");\n/* harmony import */ var _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/regenerator */ \"@babel/runtime/regenerator\");\n/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ \"react\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-router-dom */ \"react-router-dom\");\n/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_router_dom__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var _api__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../api */ \"./src/api.js\");\n\n\n\n\n\nvar Home = function Home(props) {\n  var todos = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_3__[\"useLoaderData\"])();\n  var location = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_3__[\"useLocation\"])();\n  console.log(todos, location);\n  Object(react__WEBPACK_IMPORTED_MODULE_2__[\"useEffect\"])(function () {\n    console.log(props);\n  }, []);\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(\"div\", null, \"This is Home\", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(\"button\", {\n    onClick: function onClick() {\n      alert(\"click1\");\n    }\n  }, \"click\"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__[\"Link\"], {\n    to: \"/about\"\n  }, \"About\"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(\"div\", null, todos.map(function (item) {\n    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(\"span\", {\n      key: item\n    }, item);\n  })));\n};\n\n// 挂载服务端渲染的方法\nHome.getServerSideProps = /*#__PURE__*/_babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0___default()( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1___default.a.mark(function _callee() {\n  var data;\n  return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1___default.a.wrap(function _callee$(_context) {\n    while (1) switch (_context.prev = _context.next) {\n      case 0:\n        _context.next = 2;\n        return Object(_api__WEBPACK_IMPORTED_MODULE_4__[\"getToDoList\"])();\n      case 2:\n        data = _context.sent;\n        return _context.abrupt(\"return\", data);\n      case 4:\n      case \"end\":\n        return _context.stop();\n    }\n  }, _callee);\n}));\n/* harmony default export */ __webpack_exports__[\"default\"] = (Home);\n\n//# sourceURL=webpack:///./src/pages/home.jsx?");
 
 /***/ }),
 
@@ -126,11 +138,55 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /*!***********************!*\
   !*** ./src/server.js ***!
   \***********************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("\n\nvar _express = __webpack_require__(/*! express */ \"express\");\n\nvar _express2 = _interopRequireDefault(_express);\n\nvar _react = __webpack_require__(/*! react */ \"react\");\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _server = __webpack_require__(/*! react-dom/server */ \"react-dom/server\");\n\nvar _server2 = __webpack_require__(/*! react-router-dom/server */ \"react-router-dom/server\");\n\nvar _app = __webpack_require__(/*! ./app */ \"./src/app.jsx\");\n\nvar _app2 = _interopRequireDefault(_app);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\n// 服务端入口文件\n\nvar app = (0, _express2.default)();\napp.use(_express2.default.static('public'));\n\napp.get('*', function (req, res) {\n  var content = (0, _server.renderToString)(_react2.default.createElement(\n    _server2.StaticRouter,\n    { location: req.path },\n    _react2.default.createElement(_app2.default, null)\n  ));\n  console.log(content);\n  var html = '<!DOCTYPE html>\\n  <html lang=\"en\">\\n    <head>\\n      <meta charset=\"UTF-8\" />\\n      <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\\n      <title>React Router - SSR Example</title>\\n    </head>\\n    <body>\\n      <div id=\"root\">' + content + '</div>\\n      <script type=\"module\" src=\"/index.js\"></script>\\n    </body>\\n  </html>';\n  res.send(html);\n});\n\napp.listen(3000, function () {\n  console.log('app listening on port 3000');\n});\n\n//# sourceURL=webpack:///./src/server.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/slicedToArray */ \"@babel/runtime/helpers/slicedToArray\");\n/* harmony import */ var _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/asyncToGenerator */ \"@babel/runtime/helpers/asyncToGenerator\");\n/* harmony import */ var _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime/regenerator */ \"@babel/runtime/regenerator\");\n/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var express__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! express */ \"express\");\n/* harmony import */ var express__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(express__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var node_fetch__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! node-fetch */ \"node-fetch\");\n/* harmony import */ var node_fetch__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(node_fetch__WEBPACK_IMPORTED_MODULE_4__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react */ \"react\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_5__);\n/* harmony import */ var react_dom_server__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-dom/server */ \"react-dom/server\");\n/* harmony import */ var react_dom_server__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react_dom_server__WEBPACK_IMPORTED_MODULE_6__);\n/* harmony import */ var react_router_dom_server__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react-router-dom/server */ \"react-router-dom/server\");\n/* harmony import */ var react_router_dom_server__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(react_router_dom_server__WEBPACK_IMPORTED_MODULE_7__);\n/* harmony import */ var _remix_run_router__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @remix-run/router */ \"@remix-run/router\");\n/* harmony import */ var _remix_run_router__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_remix_run_router__WEBPACK_IMPORTED_MODULE_8__);\n/* harmony import */ var _app__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./app */ \"./src/app.jsx\");\n\n\nfunction _createForOfIteratorHelper(o, allowArrayLike) { var it = typeof Symbol !== \"undefined\" && o[Symbol.iterator] || o[\"@@iterator\"]; if (!it) { if (Array.isArray(o) || (it = _unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === \"number\") { if (it) o = it; var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e) { throw _e; }, f: F }; } throw new TypeError(\"Invalid attempt to iterate non-iterable instance.\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.\"); } var normalCompletion = true, didErr = false, err; return { s: function s() { it = it.call(o); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e2) { didErr = true; err = _e2; }, f: function f() { try { if (!normalCompletion && it[\"return\"] != null) it[\"return\"](); } finally { if (didErr) throw err; } } }; }\nfunction _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === \"string\") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === \"Object\" && o.constructor) n = o.constructor.name; if (n === \"Map\" || n === \"Set\") return Array.from(o); if (n === \"Arguments\" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }\nfunction _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i]; return arr2; }\n\n\n\n\n\n\n\n\n// 服务端入口文件\n\nvar app = express__WEBPACK_IMPORTED_MODULE_3___default()();\napp.use(express__WEBPACK_IMPORTED_MODULE_3___default.a[\"static\"]('public'));\napp.get('*', /*#__PURE__*/function () {\n  var _ref = _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1___default()( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_2___default.a.mark(function _callee(req, res) {\n    var _createStaticHandler, query, remixRequest, context, router, content, html;\n    return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_2___default.a.wrap(function _callee$(_context) {\n      while (1) switch (_context.prev = _context.next) {\n        case 0:\n          _createStaticHandler = Object(_remix_run_router__WEBPACK_IMPORTED_MODULE_8__[\"createStaticHandler\"])(_app__WEBPACK_IMPORTED_MODULE_9__[\"routes\"]), query = _createStaticHandler.query;\n          remixRequest = createFetchRequest(req);\n          _context.next = 4;\n          return query(remixRequest);\n        case 4:\n          context = _context.sent;\n          router = Object(react_router_dom_server__WEBPACK_IMPORTED_MODULE_7__[\"createStaticRouter\"])(_app__WEBPACK_IMPORTED_MODULE_9__[\"routes\"], context);\n          content = Object(react_dom_server__WEBPACK_IMPORTED_MODULE_6__[\"renderToString\"])( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react_router_dom_server__WEBPACK_IMPORTED_MODULE_7__[\"StaticRouterProvider\"], {\n            router: router,\n            context: context,\n            nonce: \"the-nonce\"\n          }));\n          html = \"<!DOCTYPE html>\\n  <html lang=\\\"en\\\">\\n    <head>\\n      <meta charset=\\\"UTF-8\\\" />\\n      <meta name=\\\"viewport\\\" content=\\\"width=device-width, initial-scale=1.0\\\" />\\n      <title>React Router - SSR Example</title>\\n    </head>\\n    <body>\\n      <div id=\\\"root\\\">\".concat(content, \"</div>\\n      <script type=\\\"module\\\" src=\\\"/index.js\\\"></script>\\n    </body>\\n  </html>\");\n          res.send(html);\n        case 9:\n        case \"end\":\n          return _context.stop();\n      }\n    }, _callee);\n  }));\n  return function (_x, _x2) {\n    return _ref.apply(this, arguments);\n  };\n}());\nfunction createFetchHeaders(requestHeaders) {\n  var headers = new node_fetch__WEBPACK_IMPORTED_MODULE_4__[\"Headers\"]();\n  for (var _i = 0, _Object$entries = Object.entries(requestHeaders); _i < _Object$entries.length; _i++) {\n    var _Object$entries$_i = _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_0___default()(_Object$entries[_i], 2),\n      key = _Object$entries$_i[0],\n      values = _Object$entries$_i[1];\n    if (values) {\n      if (Array.isArray(values)) {\n        var _iterator = _createForOfIteratorHelper(values),\n          _step;\n        try {\n          for (_iterator.s(); !(_step = _iterator.n()).done;) {\n            var value = _step.value;\n            headers.append(key, value);\n          }\n        } catch (err) {\n          _iterator.e(err);\n        } finally {\n          _iterator.f();\n        }\n      } else {\n        headers.set(key, values);\n      }\n    }\n  }\n  return headers;\n}\nfunction createFetchRequest(req) {\n  var origin = \"\".concat(req.protocol, \"://\").concat(req.get(\"host\"));\n  // Note: This had to take originalUrl into account for presumably vite's proxying\n  var url = new URL(req.originalUrl || req.url, origin);\n  var controller = new AbortController();\n  req.on(\"close\", function () {\n    controller.abort();\n  });\n  var init = {\n    method: req.method,\n    headers: createFetchHeaders(req.headers),\n    signal: controller.signal\n  };\n  if (req.method !== \"GET\" && req.method !== \"HEAD\") {\n    init.body = req.body;\n  }\n  return new node_fetch__WEBPACK_IMPORTED_MODULE_4__[\"Request\"](url.href, init);\n}\napp.listen(3000, function () {\n  console.log('app listening on port 3000');\n});\n\n//# sourceURL=webpack:///./src/server.js?");
+
+/***/ }),
+
+/***/ "@babel/runtime/helpers/asyncToGenerator":
+/*!**********************************************************!*\
+  !*** external "@babel/runtime/helpers/asyncToGenerator" ***!
+  \**********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("module.exports = require(\"@babel/runtime/helpers/asyncToGenerator\");\n\n//# sourceURL=webpack:///external_%22@babel/runtime/helpers/asyncToGenerator%22?");
+
+/***/ }),
+
+/***/ "@babel/runtime/helpers/slicedToArray":
+/*!*******************************************************!*\
+  !*** external "@babel/runtime/helpers/slicedToArray" ***!
+  \*******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("module.exports = require(\"@babel/runtime/helpers/slicedToArray\");\n\n//# sourceURL=webpack:///external_%22@babel/runtime/helpers/slicedToArray%22?");
+
+/***/ }),
+
+/***/ "@babel/runtime/regenerator":
+/*!*********************************************!*\
+  !*** external "@babel/runtime/regenerator" ***!
+  \*********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("module.exports = require(\"@babel/runtime/regenerator\");\n\n//# sourceURL=webpack:///external_%22@babel/runtime/regenerator%22?");
+
+/***/ }),
+
+/***/ "@remix-run/router":
+/*!************************************!*\
+  !*** external "@remix-run/router" ***!
+  \************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("module.exports = require(\"@remix-run/router\");\n\n//# sourceURL=webpack:///external_%22@remix-run/router%22?");
 
 /***/ }),
 
@@ -142,6 +198,17 @@ eval("\n\nvar _express = __webpack_require__(/*! express */ \"express\");\n\nvar
 /***/ (function(module, exports) {
 
 eval("module.exports = require(\"express\");\n\n//# sourceURL=webpack:///external_%22express%22?");
+
+/***/ }),
+
+/***/ "node-fetch":
+/*!*****************************!*\
+  !*** external "node-fetch" ***!
+  \*****************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("module.exports = require(\"node-fetch\");\n\n//# sourceURL=webpack:///external_%22node-fetch%22?");
 
 /***/ }),
 
